@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connect SqlServer Database</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>id</th>
+        <th>name</th>
+          </tr>
+            {% for datadisplay in SqlServerConnect %}
+          <tr>
+            <td>{{ datadisplay.id }}</td>
+            <td>{{ datadisplay.name }}</td>
+          </tr>
+            {% endfor %}
+        </table>
+
+
+
+</body>
+</html>
